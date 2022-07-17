@@ -1,4 +1,0 @@
-baseURL = 'https://xamenyap.github.io/personal-blog/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "beautifulhugo"
