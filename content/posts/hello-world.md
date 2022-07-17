@@ -1,7 +1,7 @@
 ---
 title: "Hello World"
 date: 2022-07-17T15:14:05+07:00
-draft: true
+draft: false
 ---
 
 As I'm getting older it's harder for me to remember things while I realize there are more things I need to learn. Improving my memory is important. Jotting things down so that I can revise later is also a good alternative. 
