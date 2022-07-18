@@ -58,4 +58,4 @@ $ hugo server -D
 ```
 The `-D` parameter means we're publishing our drafts as well, which mean our Hello World post can be visible now. You should see some build logs in your terminal that includes a URL to your local blog. For me, it's `http://localhost:1313/personal-blog/`. Open your favorite browser and access the link, you should be greeted with your new blog! Another really nice thing of Hugo is that it provides you live reload out of the box, which means you can change your first post content, and Hugo will rebuild the blog automatically. Go ahead and try changing `Hello World` into something else and see for yourself.
 
-Now that we finished setting up our new blog in our local machine, it's time we take a step further: deploying our blog to the internet so that we can share with other people. 
+Now that we finished setting up our new blog in our local machine, it's time we take a step further: deploying our blog to the internet so that we can share with other people. This tutorial is quite long already, so let's continue in another blog post!
