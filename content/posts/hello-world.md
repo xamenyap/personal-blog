@@ -6,9 +6,9 @@ draft: false
 
 As I'm getting older it's harder for me to remember things while I realize there are more things I need to learn. Improving my memory is important. Jotting things down so that I can revise later is also a good alternative. 
 
-Go is a powerful programming language, and has been my "main" programming language for a few years by the time this post is being written. I'm excited to learn about Hugo, and hopefully I can create something fun with it. In this post I am sharing a basic tutorial of creating a blog using Hugo, and deploy it to a github page. This is what I achieved in a 2-hour session (yeah, I know, you can probably finish this in less than 2 hours, I'm getting old and slow!) of reading Hugo documents and repeating trial-and-error.
+Go is a powerful programming language, and has been my "main" programming language for a few years by the time this post is being written. I'm excited to learn [Hugo](https://gohugo.io), and hopefully I can create something fun with it. In this post I am sharing a basic tutorial of creating a blog using Hugo, and deploy it to a github page. This is what I achieved in a 2-hour session (yeah, I know, you can probably finish this in less than 2 hours, I'm getting old and slow!) of reading Hugo documents and repeating trial-and-error.
 
-The first thing to do, is to install Hugo. I'm gonna assume that you're using a Mac, and have already installed brew. Run this command in your terminal of choice.
+The first thing to do, is to install Hugo. I'm gonna assume that you're using a Mac, and have already installed [brew](https://brew.sh). Run this command in your terminal of choice.
 ```
 $ brew install hugo
 ```
@@ -20,7 +20,7 @@ $ hugo new site personal-blog
 ```
 This command will create a new folder `personal-blog` in your current directory. Note that `personal-blog` will be the folder to host all the necessary assets of the site. You are free to use another name as you see fit. For the remaining of this tutorial I will keep refering to the site we're working on as `personal-blog`, but you should know what I'm talking about.
 
-The next thing we're gonna do is to install another theme. The theme I'm choosing for this tutorial is PaperMod. To do this, firstly you need to `cd` into `personal-blog` and init a new git repository, and then finally add a git submodule of the new theme. All these steps are illustrated in the following commands
+The next thing we're gonna do is to install another theme. The theme I'm choosing for this tutorial is [PaperMod](https://themes.gohugo.io/themes/hugo-papermod). To do this, firstly you need to `cd` into `personal-blog` and init a new git repository, and then finally add a git submodule of the new theme. All these steps are illustrated in the following commands
 ```
 $ cd personal-blog
 $ git init
