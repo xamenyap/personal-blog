@@ -1,4 +1,4 @@
-baseURL = 'https://xamenyap.github.io/personal-blog/'
+baseURL = 'https://sunkeneyes.dev'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Sunken Eyes'
 theme = "PaperMod"
