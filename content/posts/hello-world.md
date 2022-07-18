@@ -6,7 +6,7 @@ draft: false
 
 As I'm getting older it's harder for me to remember things while I realize there are more things I need to learn. Improving my memory is important. Jotting things down so that I can revise later is also a good alternative. 
 
-Go is a powerful programming language, and has been my "main" programming language for a few years by the time this post is being written. I'm excited to learn about Hugo, and hopefully I can create something fun with it. In this post I am sharing a basic tutorial of creating a blog using Hugo. This is what I achieved in a 2-hour session (yeah, I know, you can probably finish this in less than 2 hours, I'm getting old and slow!) of reading Hugo documents and repeating trial-and-error.
+Go is a powerful programming language, and has been my "main" programming language for a few years by the time this post is being written. I'm excited to learn about Hugo, and hopefully I can create something fun with it. In this post I am sharing a basic tutorial of creating a blog using Hugo, and deploy it to a github page. This is what I achieved in a 2-hour session (yeah, I know, you can probably finish this in less than 2 hours, I'm getting old and slow!) of reading Hugo documents and repeating trial-and-error.
 
 The first thing to do, is to install Hugo. I'm gonna assume that you're using a Mac, and have already installed brew. Run this command in your terminal of choice.
 ```
@@ -56,6 +56,6 @@ Note that the `draft` status is set to `true`, which means it won't be visible b
 ```
 $ hugo server -D
 ```
-The `-D` parameter means we're publishing our drafts as well, which mean our Hello World post can be visible now. You should see some build logs in your terminal that includes a URL to your local blog. For me, it's `http://localhost:1313/personal-blog/`. Open your favorite browser and access the link, you should be greeted with your new blog!
+The `-D` parameter means we're publishing our drafts as well, which mean our Hello World post can be visible now. You should see some build logs in your terminal that includes a URL to your local blog. For me, it's `http://localhost:1313/personal-blog/`. Open your favorite browser and access the link, you should be greeted with your new blog! Another really nice thing of Hugo is that it provides you live reload out of the box, which means you can change your first post content, and Hugo will rebuild the blog automatically. Go ahead and try changing `Hello World` into something else and see for yourself.
 
-Another really nice thing of Hugo is that it provides you live reload out of the box, which means you can change your first post content, and Hugo will rebuild the blog automatically. Go ahead and try changing `Hello World` into something else and see for yourself.
+Now that we finished setting up our new blog in our local machine, it's time we take a step further: deploying our blog to the internet so that we can share with other people. 
