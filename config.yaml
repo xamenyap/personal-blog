@@ -2,3 +2,14 @@ baseURL: https://sunkeneyes.dev
 languageCode: en-us
 title: Sunken Eyes
 theme: PaperMod
+menu:
+  main:
+  - identifier: about
+    name: About
+    pre: <i class='fa fa-heart'></i>
+    url: /about/
+    weight: -110
+  - name: Blog
+    pre: <i class='fa fa-road'></i>
+    url: /posts/
+    weight: -100
