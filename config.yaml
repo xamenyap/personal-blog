@@ -4,6 +4,8 @@ title: Sunken Eyes
 theme: PaperMod
 params:
   ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
 menu:
   main:
   - identifier: blog
