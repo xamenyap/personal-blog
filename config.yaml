@@ -4,12 +4,13 @@ title: Sunken Eyes
 theme: PaperMod
 menu:
   main:
+  - identifier: blog
+    name: Blog
+    pre: <i class='fa fa-road'></i>
+    url: /posts/
+    weight: -110
   - identifier: about
     name: About
     pre: <i class='fa fa-heart'></i>
     url: /about/
-    weight: -110
-  - name: Blog
-    pre: <i class='fa fa-road'></i>
-    url: /posts/
     weight: -100
