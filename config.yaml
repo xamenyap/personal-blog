@@ -2,6 +2,8 @@ baseURL: https://sunkeneyes.dev
 languageCode: en-us
 title: Sunken Eyes
 theme: PaperMod
+params:
+  ShowBreadCrumbs: true
 menu:
   main:
   - identifier: blog
