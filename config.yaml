@@ -2,6 +2,11 @@ baseURL: https://sunkeneyes.dev
 languageCode: en-us
 title: Sunken Eyes
 theme: PaperMod
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
 params:
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
@@ -13,8 +18,12 @@ menu:
     pre: <i class='fa fa-road'></i>
     url: /posts/
     weight: -110
+  - identifier: search
+    name: Search
+    url: /search/
+    weight: -100
   - identifier: about
     name: About
     pre: <i class='fa fa-heart'></i>
     url: /about/
-    weight: -100
+    weight: -90
