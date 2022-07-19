@@ -11,6 +11,7 @@ params:
   ShowBreadCrumbs: true
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
+  ShowReadingTime: true
 menu:
   main:
   - identifier: blog
