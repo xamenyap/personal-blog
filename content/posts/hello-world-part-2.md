@@ -5,7 +5,7 @@ draft: true
 ---
 We successfully created a blog in our local environment in the first part of this tutorial. Now it's time to share it with the Internet. We will levarage Github pages as our hosting environment. Why? Because it's free!
 
-I'm gonna assume that you already have a <a href="https://github.com/" target="blank">Github</a> account, and also install <a href="https://git-scm.com/" target="blank">git</a> in your local machine. You should create a new repository in your Github, give it the name `personal-blog` for the sake of simplicity. Remember to set your repository visibility as public because it's required by Github (you can actually make it private if you're willing to pay though). Next thing you're gonna do is to push your local source code to the newly created github repository. You need to `cd` into your `personal-blog` folder, and then run these commands
+I'm gonna assume that you already have a {{< ahref href="https://github.com/" txt="Github">}} account, and also install {{< ahref href="https://git-scm.com/" txt="git">}} in your local machine. You should create a new repository in your Github, give it the name `personal-blog` for the sake of simplicity. Remember to set your repository visibility as public because it's required by Github (you can actually make it private if you're willing to pay though). Next thing you're gonna do is to push your local source code to the newly created github repository. You need to `cd` into your `personal-blog` folder, and then run these commands
 ```sh
 $ git init .
 $ git remote add origin git@github.com:{yourGithubName}/personal-blog.git
