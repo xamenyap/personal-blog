@@ -1,7 +1,7 @@
 ---
 title: "Hello World Part 2"
 date: 2022-07-19T19:36:31+07:00
-draft: true
+draft: false
 ---
 We successfully created a blog in our local environment in the first part of this tutorial. Now it's time to share it with the Internet. We will levarage Github pages as our hosting environment. Why? Because it's free!
 
