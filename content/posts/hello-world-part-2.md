@@ -7,15 +7,17 @@ draft: false
 We successfully created a blog in our local environment in [the first part]({{< ref "/posts/hello-world.html" >}} "the first part")
  of this tutorial. Now it's time to share it with the Internet. We will levarage Github pages as our hosting environment. Why? Because it's free!
 
-I'm gonna assume that you already have a {{< ahref href="https://github.com/" txt="Github">}} account, and also install {{< ahref href="https://git-scm.com/" txt="git">}} in your local machine. You should create a new repository in your Github, give it the name `personal-blog` for the sake of simplicity. Remember to set your repository visibility as public because it's required by Github (you can actually make it private if you're willing to pay though). Next thing you're gonna do is to push your local source code to the newly created github repository. You need to `cd` into your `personal-blog` folder, and then run these commands
+I'm gonna assume that you already got a {{< ahref href="https://github.com/" txt="Github">}} account, and also installed {{< ahref href="https://git-scm.com/" txt="git">}} in your local machine. You should create a new repository in your Github, name it `personal-blog`, or any fancy name that you want. For the remainder of this tutorial we will refer to it as `personal-blog` for the sake of simplicity. Remember to set your repository visibility as public because it's required by Github (you can actually make it private if you're willing to pay though). 
+
+The next thing you want to do is to push your local source code to the newly created github repository. You need to `cd` into your `personal-blog` folder, and then run these commands
 ```sh
 $ git init .
 $ git remote add origin git@github.com:{yourGithubName}/personal-blog.git
 $ git push -u origin master
 ```
-Replace `{yourGithubName}` with your chosen Github name when you created a new account. If you're working on `main` branch, then replace `master` with `main`.
+Replace `{yourGithubName}` with your chosen Github name when you created a new account. If you're working on `main` branch, then replace `master` with `main`. For the remainder of this tutorial I'm gonna assume we stick with `master` as our primary branch.
 
-Access your newly created repo in Github, you'll see the codes being pushed to either `main` or `master` branch, depending on your configuration. Now we're gonna add a Github action hook so that every time we push new stuff to our repository, Github will help us build and deploy our blog. Create a new file under `personal-blog/.github/workflows/gh-pages.yml` and fill it with this content
+Access your newly created repo in Github, you'll see the codes being pushed to `master` branch. Now we're gonna add a Github action hook so that every time we push new stuff to this `master` branch, Github will help us build and deploy our blog. Create a new file under `personal-blog/.github/workflows/gh-pages.yml` and fill it with this content
 ```yml
 name: github pages
 
@@ -50,7 +52,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 ```
-Note that you need to specify the target branch as `master` or `main`. In my case I'm using `master` as my target branch. This action hook will build your blog every time your `master` branch is updated, and the built artifacts will be deployed on another branch called `gh-pages`. Commit this action hook to your repository by running these commands
+Note that the target branch is specified as `master` here. This action hook will build your blog every time your `master` branch is updated, and the built artifacts will be deployed on another branch called `gh-pages`. Commit this action hook to your repository by running these commands
 ```sh
 $ git add .
 $ git commit -m "Add gh-pages action hook"
