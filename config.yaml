@@ -12,6 +12,7 @@ params:
   ShowPostNavLinks: true
   ShowCodeCopyButtons: true
   ShowReadingTime: true
+  ShowShareButtons: true
 menu:
   main:
   - identifier: blog
