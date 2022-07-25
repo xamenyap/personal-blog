@@ -13,4 +13,6 @@ From this point onward, we will assume that you bought a domain from namecheap, 
 
 ## Domain DNS configuration
 
+## Source code update
+
 ## Github pages update
