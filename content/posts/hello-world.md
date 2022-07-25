@@ -7,6 +7,7 @@ As I'm getting older it's harder for me to remember things while I realize there
 
 {{< ahref href="https://go.dev/" txt="Go">}} is a powerful programming language, and has been my "main" programming language for a few years by the time this post is being written. I'm excited to learn {{< ahref href="https://gohugo.io" txt="Hugo">}}, and hopefully I can create something fun with it. In this post I am sharing a basic tutorial of creating a blog using Hugo, and deploy it to a github page. This is what I achieved in a 2-hour session (yeah, I know, you can probably finish this in less than 2 hours, I'm getting old and slow!) of reading Hugo documents and repeating trial-and-error.
 
+## Hugo installation
 The first thing to do, is to install Hugo. I'm gonna assume that you're using a Mac, and have already installed {{< ahref href="https://brew.sh" txt="brew">}}. Run this command in your terminal of choice.
 ```sh
 $ brew install hugo
@@ -19,6 +20,7 @@ $ hugo new site personal-blog
 ```
 This command will create a new folder `personal-blog` in your current directory. Note that `personal-blog` will be the folder to host all the necessary assets of the site. You are free to use another name as you see fit. For the remaining of this tutorial I will keep refering to the site we're working on as `personal-blog`, but you should know what I'm talking about.
 
+## Hugo theme
 The next thing we're gonna do is to install another theme. The theme I'm choosing for this tutorial is <a href="https://themes.gohugo.io/themes/hugo-papermod" target="blank">PaperMod</a>. To do this, firstly you need to `cd` into `personal-blog` and init a new git repository, and then finally add a git submodule of the new theme. All these steps are illustrated in the following commands
 ```sh
 $ cd personal-blog
@@ -30,6 +32,7 @@ You should probably see a bunch of new files added to folder `personal-blog`. Ne
 theme = "PaperMod"
 ```
 
+## The first blog post
 Our new blog is almost ready now! We're gonna add a sample post to our blog. As a tradition, we're gonna add a Hello World blog post. The command for this is as followed
 ```sh
 $ hugo new posts/hello-world.md
@@ -52,7 +55,10 @@ draft: true
 
 Hello World
 ```
-Note that the `draft` status is set to __true__, which means it won't be visible by default. However, this is good enough to showcase our blog in the local environment by simply running the following command
+Note that the `draft` status is set to __true__, which means it won't be visible by default. However, this is good enough to showcase our blog in the local environment.
+
+## Local deployment
+Hugo local deployment can simply be done by running the following command
 ```sh
 $ hugo server -D
 ```
