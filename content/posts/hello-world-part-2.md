@@ -68,4 +68,19 @@ Now you should access your Github repository, go to __Settings__, and then __Pag
 Under __Source__ you need to select branch `gh-pages`, and select folder `root`, and then finally click __Save__. Wait for a few seconds, and you should see this
 ![hello-world-part-2-image-2](/images/hello-world/hello-world-part-2-image-2.png)
 
-Your blog can now be accessed by netizens via the link in the blue box! Note that in your case the Github name should not be `xamenyap` (unless you're my doppelganger), and your repository is probably not `sunken-eyes`. Now go ahead and access the awesome blog you just created :) In the next post we will deploy our blog using our chosen domain, but still hosting on Github.
+## Config Update
+
+Your blog can now be accessed by netizens via the link in the blue box! Note that in your case the Github name should not be `xamenyap` (unless you're my doppelganger), and your repository is probably not `sunken-eyes`. If you follow this tutorial strictly then the URL for your blog post will be `https://{yourGithubName}.github.io/personal-blog` with `{yourGithubName}` being whatever you used during the registration process. 
+
+What you need to do next is to update your blog base url in configuration file `config.toml`
+```
+baseURL = https://{yourGithubName}.github.io/personal-blog
+```
+And then you will need to commit this change, and push it to `master` branch
+```sh
+$ git add .
+$ git commit -m "Update baseURL in config file"
+$ git push -u origin master
+```
+
+Wait a few minutes for Github action to work its magic, and then access the awesome blog you just created via `https://{yourGithubName}.github.io/personal-blog` :) In the next post we will deploy our blog using our chosen domain, but still hosting on Github.
