@@ -7,6 +7,7 @@ draft: false
 We successfully created a blog in our local environment in [the first part]({{< ref "/posts/hello-world.md" >}} "the first part")
  of this tutorial. Now it's time to share it with the Internet. We will levarage Github pages as our hosting environment. Why? Because it's free!
 
+## Github Setup
 I'm gonna assume that you already got a {{< ahref href="https://github.com/" txt="Github">}} account, and also installed {{< ahref href="https://git-scm.com/" txt="git">}} in your local machine. You should create a new repository in your Github, name it `personal-blog`, or any fancy name that you want. For the remainder of this tutorial we will refer to it as `personal-blog` for the sake of simplicity. Remember to set your repository visibility as public because it's required by Github (you can actually make it private if you're willing to pay though). 
 
 The next thing you want to do is to push your local source code to the newly created github repository. You need to `cd` into your `personal-blog` folder, and then run these commands
@@ -17,6 +18,7 @@ $ git push -u origin master
 ```
 Replace `{yourGithubName}` with your chosen Github name when you created a new account. If you're working on `main` branch, then replace `master` with `main`. For the remainder of this tutorial I'm gonna assume we stick with `master` as our primary branch.
 
+## Github Action
 Access your newly created repo in Github, you'll see the codes being pushed to `master` branch. Now we're gonna add a Github action hook so that every time we push new stuff to this `master` branch, Github will help us build and deploy our blog. Create a new file under `personal-blog/.github/workflows/gh-pages.yml` and fill it with this content
 ```yml
 name: github pages
@@ -58,6 +60,8 @@ $ git add .
 $ git commit -m "Add gh-pages action hook"
 $ git push -u origin master
 ```
+
+## Github Pages
 Now you should access your Github repository, go to __Settings__, and then __Pages__. You should see something like this
 ![hello-world-part-2-image-1](/images/hello-world/hello-world-part-2-image-1.png)
 
